@@ -22,6 +22,7 @@ def get_user_projects(user_workspace):
         projects = s.get(f"https://api.clockify.me/api/v1/workspaces/{user_workspace}/projects")
     except [request_exception, connection_exception, http_error]:
         return
+
     return json.loads(projects.text)
 
 
@@ -31,6 +32,7 @@ def get_time_records(project_id, user_id, workspace):
         time_records = s.get(f"https://api.clockify.me/api/v1/workspaces/{workspace}/user/{user_id}/time-entries?start={year}-01-01T00:00:00.00Z&end={year}-12-31T00:00:00.00Z&project={project_id}")
     except [request_exception, connection_exception, http_error]:
         return
+
     return json.loads(time_records.text)
 
 
@@ -43,3 +45,4 @@ def get_paid_time_off_task_id(workspace, project_id):
                 return task['id']
     except [request_exception, connection_exception, http_error]:
         return
+
