@@ -3,7 +3,7 @@ import json
 from datetime import date
 
 s = requests.Session()
-s.headers = {"X-Api-Key": "MDU3YmYxZDYtYjVhZC00N2VjLThmOGUtNGUxNGMyNmEzZmQ2"}
+s.headers = {"X-Api-Key": "MY_API_KEY"}
 request_exception = requests.RequestException
 connection_exception = requests.ConnectionError
 http_error = requests.HTTPError
