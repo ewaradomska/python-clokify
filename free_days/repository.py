@@ -4,7 +4,6 @@ from consts import *
 from datetime import date
 
 s = requests.Session()
-s.u
 s.headers = API_KEY
 request_exception = requests.RequestException
 connection_exception = requests.ConnectionError

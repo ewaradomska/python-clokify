@@ -1,4 +1,4 @@
 BASE_URL = "https://api.clockify.me/api/v1"
-API_KEY = {"X-Api-Key": "NGU1YzY3MDMtZThkOC00YjVhLTg5YzgtY2JiNjNhYmVjZjli"}
+API_KEY = {"X-Api-Key": ""}
 TIME_PAIDOFF_PROJECT = "Paid TimeOff"
 
