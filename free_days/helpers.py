@@ -1,3 +1,5 @@
+from consts import *
+
 def get_user_id(user_data):
     return user_data['id']
 
@@ -8,7 +10,7 @@ def get_user_workspace(user_data):
 
 def get_free_time_id(projects):
     for project in projects:
-        if project['name'] == "TimeOff":
+        if project['name'] == TIME_PAIDOFF_PROJECT:
             return project['id']
 
 
